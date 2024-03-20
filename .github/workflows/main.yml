@@ -22,7 +22,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t japanbanglacoders/node-docker-app -f 04\Docker\Registry/Dockerfile .
+        run: docker build -t japanbanglacoders/node-docker-app -f 04\ Docker\ Registry/Dockerfile .
         working-directory: Guide-to-Containers-with-Docker
 
       - name: Push Docker image to Docker Hub
