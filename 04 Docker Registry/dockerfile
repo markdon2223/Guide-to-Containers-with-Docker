@@ -5,13 +5,12 @@ FROM node:14
 WORKDIR /app
 
 # Copy package.json and package-lock.json to the working directory
-COPY ./Guide-to-Containers-with-Docker/04\ Docker\ Registry/package*.json ./
+COPY ./Guide-to-Containers-with-Docker/04\ Docker\ Registry/* ./
 
 # Install dependencies
 RUN npm install
 
 # Copy the rest of the application code to the working directory
-COPY ./Guide-to-Containers-with-Docker/04\ Docker\ Registry ./
 
 # Expose the port the app runs on
 EXPOSE 3000
