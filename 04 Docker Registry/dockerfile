@@ -11,7 +11,7 @@ COPY ./Guide-to-Containers-with-Docker/04\ Docker\ Registry/package*.json ./
 RUN npm install
 
 # Copy the rest of the application code to the working directory
-COPY ./Guide-to-Containers-with-Docker/04\ Docker\ Registry .
+COPY ./Guide-to-Containers-with-Docker/04\ Docker\ Registry ./
 
 # Expose the port the app runs on
 EXPOSE 3000
