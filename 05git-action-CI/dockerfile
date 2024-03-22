@@ -5,7 +5,7 @@ FROM node:14
 WORKDIR /app
 
 # Copy package.json and package-lock.json to the working directory
-COPY ./Guide-to-Containers-with-Docker/05git-action-CI/* ./
+COPY ./Guide-to-Containers-with-Docker\05git-action-CI/* ./app
 
 # Install dependencies
 RUN npm install
